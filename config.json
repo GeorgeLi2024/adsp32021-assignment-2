@@ -1,0 +1,51 @@
+{
+  "target_column": "gender",
+  "entity_column": "athlete_id",
+  "positive_class": "Female",
+  "class_order": ["Female", "Male"],
+  "snapshot_timestamp": "2026-10-28T00:00:00Z",
+  "valid_ranges": {
+    "age": [13, 100],
+    "height": [48, 84],
+    "weight": [75, 500],
+    "candj": [0, 1000],
+    "snatch": [0, 800],
+    "deadlift": [0, 1200],
+    "backsq": [0, 1000]
+  },
+  "feature_versions": {
+    "v1": {
+      "name": "athlete_demographics_v1",
+      "columns": ["age", "height", "weight"]
+    },
+    "v2": {
+      "name": "athlete_demographics_and_lifts_v2",
+      "columns": ["age", "height", "weight", "candj", "snatch", "deadlift", "backsq"]
+    }
+  },
+  "hyperparameter_sets": {
+    "shallow": {
+      "max_depth": 3,
+      "min_samples_leaf": 20
+    },
+    "deeper": {
+      "max_depth": 8,
+      "min_samples_leaf": 100
+    }
+  },
+  "split": {
+    "test_size": 0.2,
+    "random_state": 42
+  },
+  "model": {
+    "name": "DecisionTreeClassifier",
+    "class_weight": "balanced",
+    "random_state": 42
+  },
+  "codecarbon": {
+    "country_iso_code": "USA",
+    "region": null,
+    "tracking_mode": "process",
+    "measure_power_secs": 1
+  }
+}

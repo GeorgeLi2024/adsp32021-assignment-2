@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+mlflow.db
+mlartifacts/
+mlruns/
+feature_repo/data/
+.env
+.env.*
+.ipynb_checkpoints/
+review/
+data/*.zip
+mlflow.db-*

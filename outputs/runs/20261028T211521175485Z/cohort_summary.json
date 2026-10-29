@@ -1,0 +1,35 @@
+{
+  "input_rows": 423006,
+  "exact_duplicate_rows_removed": 2,
+  "eligible_rows": 73281,
+  "excluded_rows": 349725,
+  "class_counts": {
+    "Female": 20466,
+    "Male": 52815
+  },
+  "feature_columns_v1": [
+    "age",
+    "height",
+    "weight"
+  ],
+  "feature_columns_v2": [
+    "age",
+    "height",
+    "weight",
+    "candj",
+    "snatch",
+    "deadlift",
+    "backsq"
+  ],
+  "train_test_split": {
+    "test_size": 0.2,
+    "random_state": 42
+  },
+  "snapshot_timestamp": "2026-10-28T00:00:00Z",
+  "train_rows": 58624,
+  "test_rows": 14657,
+  "feast_read_rows": {
+    "v1": 73281,
+    "v2": 73281
+  }
+}

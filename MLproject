@@ -1,0 +1,21 @@
+name: adsp32021_assignment2
+
+entry_points:
+  train:
+    parameters:
+      feature_data: path
+      split_data: path
+      config: path
+      output_dir: path
+      feature_version: {type: str}
+      hyperparameter_set: {type: str}
+      run_name: {type: str}
+    command: >-
+      python src/train.py
+      --feature-data {feature_data}
+      --split-data {split_data}
+      --config {config}
+      --output-dir {output_dir}
+      --feature-version {feature_version}
+      --hyperparameter-set {hyperparameter_set}
+      --run-name {run_name}
