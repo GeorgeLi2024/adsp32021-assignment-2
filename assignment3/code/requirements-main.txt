@@ -1,0 +1,12 @@
+mlflow==3.17.1
+feast==0.66.0
+flaml[automl]==2.7.0
+codecarbon==3.3.1
+scikit-learn==1.9.1
+pandas==2.3.3
+numpy==2.5.4
+pyarrow==25.0.1
+matplotlib==3.11.2
+lightgbm==4.7.0
+xgboost==2.1.4
+psutil==7.2.2
